@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta name="keywords" content="Trailhead Pottery, Eau Claire Pottery, pottery, Eau Claire WI, Eau Claire, Leigh Yakaites, glaze, clay" />
+	<meta name="author" content='Alex Ninneman' />
+	<meta name="copyright" content="Trailhead Pottery August 2011" />
+	<title>Welcome to Trailhead Pottery</title>
+	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css" />
+	<link href="/css/landing.css" rel="stylesheet" media="all" />
+</head>
+<body>
+	<img src="/img/throwing_newsite.png" id="new_site" alt="We're throwing our new site!" />
+	<header>
+		<img src="/img/logo.png" class="logo" alt="Welcome to Trailhead Pottery" />
+		<span class="sub_title">Home of Eau Claire's Biggest Muffin!</span>
+	</header>
+	<section>
+		<img src="/img/foot.png" class="bar" alt="" />
+		<form method="post" action="/">
+			<% if(typeof msg != 'undefined'){ %>
+				<p><%= msg %></p>
+			<% } %>
+			<p>
+				<span>Have an idea?</span>
+				We'd love to hear it.
+			</p>
+			<input type="email" name="email" id="email" placehodler="Enter your e-mail" />
+			<textarea rows="10" cols="20" name="idea" id="idea"></textarea>
+			<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit Your Idea" />
+		</form>
+	</section>
+	<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script defer src="/js/analytics.js"></script>
+</body>
+</html>
